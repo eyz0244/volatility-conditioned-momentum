@@ -1,0 +1,19 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data (raw or sensitive)
+data/raw_prices/
+data/metadata/
+
+# Output artifacts
+*.log
+*.aux
+*.out
+*.toc
+
+# System files
+.DS_Store
