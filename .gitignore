@@ -1,6 +1,7 @@
 # Python cache and compiled files
 __pycache__/
 *.pyc
+data/processed/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/

@@ -9,7 +9,7 @@ def compute_log_returns(price_df: pd.DataFrame) -> pd.DataFrame:
 
 def compute_momentum(price_df: pd.DataFrame, lag: int = 21, lookback: int = 252) -> pd.DataFrame:
     """
-    Compute 12M-1M momentum: (P_{t-lag} / P_{t-lookback}) - 1
+    Compute momentum: (P_{t-lag} / P_{t-lookback}) - 1
     Default: lag=21 days, lookback=252 days (~1 year)
     """
     return price_df.shift(lag) / price_df.shift(lookback) - 1
