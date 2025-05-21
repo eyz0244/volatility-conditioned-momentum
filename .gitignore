@@ -1,20 +1,23 @@
-# Python cache and compiled files
+# Python cache
 __pycache__/
 *.pyc
-data/processed/
 
-# Jupyter checkpoints
+# Jupyter
 .ipynb_checkpoints/
 
-# Data (raw or sensitive)
+# Data folders to exclude
 data/raw_prices/
+data/processed/
 data/metadata/
 
-# Output artifacts
+# Allow S&P500 ticker universe file
+!data/sp500.csv
+
+# Output
 *.log
 *.aux
 *.out
 *.toc
 
-# System files
+# System
 .DS_Store
