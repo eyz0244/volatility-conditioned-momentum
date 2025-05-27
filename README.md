@@ -1,23 +1,23 @@
 # Volatility-Conditioned Factor Performance
 
-This research project investigates how equity factor returns vary across different market volatility regimes.  
-We test the hypothesis that momentum signals perform more consistently during low-volatility periods.
+This project analyzes how equity factor returns—specifically momentum and reversal—vary across market volatility and dispersion regimes.  
+We test whether momentum signals exhibit greater stability in low-volatility and low-dispersion environments.
 
-## Structure
+## Repository Structure
 
-- `notebooks/`: step-by-step development, from universe construction to robustness tests
-- `src/`: reusable Python modules (e.g., factor construction, backtest engine)
-- `research/`: visualizations and write-up
-- `data/`: raw and processed data (excluded from version control)
+- `notebooks/`: step-by-step development, from universe construction to robustness testing  
+- `src/`: reusable Python modules (e.g., factor construction, regime definitions, backtesting)  
+- `research/`: visualizations and formal write-up  
+- `data/`: raw and processed data (excluded via `.gitignore`)  
 
 ## Methods
 
-- Momentum and reversal factor construction
-- Regime definition using rolling market volatility
-- Conditional decile backtests
-- Walk-forward validation with regime lags
-- Bootstrap-based robustness testing
+- Momentum and reversal factor engineering  
+- Regime definition using rolling market volatility and cross-sectional dispersion  
+- Conditional decile backtests across volatility and dispersion states  
+- Walk-forward validation with lagged regime detection  
+- Bootstrap inference to assess statistical robustness  
 
 ## Status
 
-Work in progress. Final cleaned code and full write-up (LaTeX + PDF) will be released in upcoming versions.
+Active. Full cleaned code and final LaTeX write-up (`Zhao_MomentumRegimes_2025_v1.pdf`) are included under `research/`.
